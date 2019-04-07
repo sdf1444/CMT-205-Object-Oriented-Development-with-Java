@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1292.0" prefWidth="2003.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudInfoController">
+   <children>
+      <TabPane layoutX="405.0" layoutY="26.0" prefHeight="1228.0" prefWidth="1128.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="AHT - Ashtead Group plc">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1157.0" prefWidth="1533.0">
+                     <children>
+                        <LineChart fx:id="chart1" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                          <xAxis>
+                            <CategoryAxis label="Date" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Adj Close" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <TableView fx:id="AHT" prefHeight="763.0" prefWidth="638.0">
+                           <columns>
+                              <TableColumn fx:id="date" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="ANTO - Antofagasta plc">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="485.0" prefWidth="1013.0">
+                     <children>
+                        <TableView fx:id="ANTO" prefHeight="763.0" prefWidth="638.0">
+                           <columns>
+                              <TableColumn fx:id="date2" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open2" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high2" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low2" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close2" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume2" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose2" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart2" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="BA - BAE Systems plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="BA" prefHeight="763.0" prefWidth="644.0">
+                           <columns>
+                              <TableColumn fx:id="date3" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open3" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high3" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low3" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close3" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume3" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose3" prefWidth="170.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart3" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="BATS - British American Tobacco plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="BATS" prefHeight="763.0" prefWidth="640.0">
+                           <columns>
+                              <TableColumn fx:id="date4" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open4" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high4" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low4" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close4" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume4" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose4" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart4" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="CCH - Coca-Cola HBC AG">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="CCH" prefHeight="763.0" prefWidth="646.0">
+                           <columns>
+                              <TableColumn fx:id="date5" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open5" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high5" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low5" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close5" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume5" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose5" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart5" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="CCL - Carnival plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="CCL" prefHeight="763.0" prefWidth="649.0">
+                           <columns>
+                              <TableColumn fx:id="date6" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open6" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high6" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low6" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close6" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume6" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose6" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart6" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="CNA - Centrica plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="CNA" prefHeight="763.0" prefWidth="642.0">
+                           <columns>
+                              <TableColumn fx:id="date7" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open7" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high7" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low7" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close7" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume7" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose7" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart7" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="CPG - Compass Group plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="CPG" prefHeight="763.0" prefWidth="648.0">
+                           <columns>
+                              <TableColumn fx:id="date8" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open8" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high8" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low8" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close8" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume8" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose8" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart8" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="EXPN - Experian plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="EXPN" prefHeight="763.0" prefWidth="642.0">
+                           <columns>
+                              <TableColumn fx:id="date9" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open9" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high9" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low9" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close9" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume9" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose9" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart9" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="EZJ - EasyJet plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="EZJ" prefHeight="763.0" prefWidth="650.0">
+                           <columns>
+                              <TableColumn fx:id="date10" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open10" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high10" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low10" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close10" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume10" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose10" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart10" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="GKN - GKN plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="GKN" prefHeight="763.0" prefWidth="646.0">
+                           <columns>
+                              <TableColumn fx:id="date11" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open11" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high11" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low11" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close11" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume11" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose11" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart11" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="MDC - Mediclinic International plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="MDC" prefHeight="763.0" prefWidth="646.0">
+                           <columns>
+                              <TableColumn fx:id="date12" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open12" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high12" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low12" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close12" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume12" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose12" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart12" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="PFG - Provident Financial plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="PFG" prefHeight="763.0" prefWidth="642.0">
+                           <columns>
+                              <TableColumn fx:id="date13" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open13" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high13" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low13" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close13" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume13" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose13" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart13" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="PPB - Paddy Power Betfair plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="PPB" prefHeight="763.0" prefWidth="641.0">
+                           <columns>
+                              <TableColumn fx:id="date14" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open14" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high14" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low14" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close14" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume14" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose14" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart14" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="PRU - Prudential plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="PRU" prefHeight="763.0" prefWidth="639.0">
+                           <columns>
+                              <TableColumn fx:id="date15" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open15" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high15" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low15" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close15" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume15" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose15" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart15" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="PSN - Persimmon plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="PSN" prefHeight="763.0" prefWidth="641.0">
+                           <columns>
+                              <TableColumn fx:id="date16" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open16" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high16" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low16" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close16" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume16" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose16" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart16" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="RB - Reckitt Benckiser Group plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="RB" prefHeight="763.0" prefWidth="645.0">
+                           <columns>
+                              <TableColumn fx:id="date17" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open17" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high17" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low17" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close17" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume17" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose17" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart17" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="RDSA - Royal Dutch Shell plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="RDSA" prefHeight="763.0" prefWidth="639.0">
+                           <columns>
+                              <TableColumn fx:id="date18" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open18" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high18" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low18" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close18" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume18" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose18" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart18" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="RR - Rolls-Royce Holdings plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="RR" prefHeight="763.0" prefWidth="644.0">
+                           <columns>
+                              <TableColumn fx:id="date19" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open19" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high19" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low19" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close19" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume19" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose19" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart19" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SDR - Schroders plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="8.0">
+                     <children>
+                        <TableView fx:id="SDR" prefHeight="763.0" prefWidth="639.0">
+                           <columns>
+                              <TableColumn fx:id="date20" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open20" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high20" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low20" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close20" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume20" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose20" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart20" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SHP - Shire plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="SHP" prefHeight="763.0" prefWidth="640.0">
+                           <columns>
+                              <TableColumn fx:id="date21" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open21" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high21" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low21" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close21" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume21" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose21" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart21" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SKY - Sky plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="SKY" prefHeight="763.0" prefWidth="638.0">
+                           <columns>
+                              <TableColumn fx:id="date22" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open22" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high22" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low22" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close22" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume22" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose22" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart22" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SSE - SSE plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="SSE" prefHeight="763.0" prefWidth="637.0">
+                           <columns>
+                              <TableColumn fx:id="date23" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open23" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high23" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low23" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close23" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume23" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose23" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart23" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="STJ - St. James's Place plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="STJ" prefHeight="763.0" prefWidth="644.0">
+                           <columns>
+                              <TableColumn fx:id="date24" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open24" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high24" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low24" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close24" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume24" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose24" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart24" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="TSCO - Tesco plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TSCO" prefHeight="763.0" prefWidth="649.0">
+                           <columns>
+                              <TableColumn fx:id="date25" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open25" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high25" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low25" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close25" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume25" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose25" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart25" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="TUI - TUI AG">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TUI" prefHeight="763.0" prefWidth="635.0">
+                           <columns>
+                              <TableColumn fx:id="date26" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open26" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high26" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low26" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close26" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume26" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose26" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart26" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="VOD - Vodafone Group plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="VOD" prefHeight="763.0" prefWidth="643.0">
+                           <columns>
+                              <TableColumn fx:id="date27" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open27" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high27" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low27" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close27" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume27" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose27" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart27" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="WPG - Worldpay Group plc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="526.0" prefWidth="1673.0">
+                     <children>
+                        <TableView fx:id="WPG" prefHeight="763.0" prefWidth="642.0">
+                           <columns>
+                              <TableColumn fx:id="date28" minWidth="0.0" prefWidth="99.0" text="Date" />
+                              <TableColumn fx:id="open28" prefWidth="101.0" text="Open" />
+                              <TableColumn fx:id="high28" prefWidth="95.0" text="High" />
+                              <TableColumn fx:id="low28" minWidth="0.0" prefWidth="0.0" text="Low" />
+                              <TableColumn fx:id="close28" minWidth="0.0" prefWidth="102.0" text="Close" />
+                              <TableColumn fx:id="volume28" minWidth="0.0" prefWidth="102.0" text="Volume" />
+                              <TableColumn fx:id="adjclose28" prefWidth="139.0" text="Adj close" />
+                           </columns>
+                        </TableView>
+                        <LineChart fx:id="chart28" layoutX="620.0" layoutY="7.0" prefHeight="729.0" prefWidth="494.0" title="Adj Close Stock">
+                           <xAxis>
+                              <CategoryAxis label="Date" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Adj Close" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btngenerateReport" mnemonicParsing="false" onAction="#generateReport" text="Generate latest share price report for each company" />
+      <TableView fx:id="stockview" layoutY="26.0" prefHeight="1201.0" prefWidth="405.0">
+        <columns>
+          <TableColumn fx:id="stocksymbol" prefWidth="128.0" text="Stock Symbol" />
+          <TableColumn fx:id="companyname" minWidth="0.0" prefWidth="169.0" text="Company Name" />
+            <TableColumn fx:id="latestshareprice" minWidth="0.0" prefWidth="111.0" text="Latest share price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
